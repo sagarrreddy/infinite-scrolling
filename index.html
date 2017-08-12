@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quintype Data Driven Publishing Platform">
+    <title>Quintype | Landing Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo_icon.png">
+
+    <!-----------------Global CSS ----------------------->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!------------------Custom CSS --------------------------->
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <style>
+        /*Typography*/
+
+        @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+        body{
+            font-family: 'Lato', sans-serif;
+            background-color: #f4f4f4;
+            opacity: 0.7;
+        }
+
+        .font32{
+            font-size: 32px;
+        }
+
+        .font_bold{
+            font-weight: bold;
+        }
+
+        .color_black{
+            color: #000;
+        }
+
+
+        /*Header*/
+       .toggle_custom{
+           border:none;
+           display: block;
+           background-color: transparent;
+           float: left;
+           margin-top: 23px;
+       }
+
+        .toggle_icon{
+
+            width: 30px !important;
+            height: 1.8px !important;
+            border: 1.8px solid #000;
+
+        }
+
+       .navbar-toggle .toggle_icon+.toggle_icon{
+           margin-top: 6px !important;
+       }
+
+        .navbar_custom{
+            background-color: #fff;
+            border-color: transparent;
+            min-height: 89px;
+        }
+
+        .logo_align{
+            margin-left: -15px !important;
+            color: #000 !important;
+            padding: 30px 15px !important;
+        }
+
+        .search_icon{
+            position: absolute;
+            right:30px;
+            top:30px;
+        }
+    </style>
+</head>
+<body>
+
+<!----------------Start of Header-------------------------->
+
+<header>
+    <nav class="navbar navbar-default navbar_custom">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <button class="navbar-toggle toggle_custom" type="button" data-toggle="collapse"
+                            data-target="#"><span
+                            class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar toggle_icon"></span>
+                        <span class="icon-bar toggle_icon"></span>
+                        <span class="icon-bar toggle_icon"></span>
+                    </button>
+                    <a class="navbar-brand logo_align font32 font_bold" href="#">
+                            Quintype
+                    </a>
+                    <img src="images/search-blue.png" alt="search_icon quintype" class="img-responsive search_icon">
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--<div class = 'container' style="min-height: 800px;">-->
+    <!--<input type="button" value="click me" class="btn">-->
+    <!--<h1 class="appendData"></h1>-->
+<!--</div>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="vendors/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
+<script>
+    var processing;
+    var update;
+    var i = 0;
+
+    function nextItem() {
+        i = i + 1;
+        i = i % update.length;
+      return update[i].headline;
+
+
+    }
+
+$('.btn').on('click',function () {
+    console.log(nextItem());
+
+});
+    $.ajax({
+        type: 'GET',
+        url: 'https://rio.quintype.io/api/v1/stories',
+        "async": true,
+        "crossDomain": true,
+        data: {
+            format: 'json'
+        },
+        error: function(data) {
+            console.log(data);
+        },
+        dataType: 'json',
+        success: function(data) {
+console.log(data);
+            update = data.stories;
+            console.log(update.length);
+
+
+        }
+
+    });
+
+    $(document).ready(function(){
+        $(document).scroll(function(e){
+
+            if (processing)
+                return false;
+
+            if ($(window).scrollTop() >= $(document).height() - $(window).height() - 700){
+                processing = true;
+
+                processing = false;
+
+        }
+
+    });
+
+    });
+
+</script>
+</body>
+</html>
