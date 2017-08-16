@@ -8,77 +8,10 @@
     <title>Quintype | Landing Page</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo_icon.png">
 
-    <!-----------------Global CSS ----------------------->
+    <!-----------------CSS Links ----------------------->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-    <!------------------Custom CSS --------------------------->
-
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <style>
-        /*Typography*/
-
-        @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-        body{
-            font-family: 'Lato', sans-serif;
-            background-color: #f4f4f4;
-            opacity: 0.7;
-        }
-
-        .font32{
-            font-size: 32px;
-        }
-
-        .font_bold{
-            font-weight: bold;
-        }
-
-        .color_black{
-            color: #000;
-        }
-
-
-        /*Header*/
-       .toggle_custom{
-           border:none;
-           display: block;
-           background-color: transparent;
-           float: left;
-           margin-top: 23px;
-       }
-
-        .toggle_icon{
-
-            width: 30px !important;
-            height: 1.8px !important;
-            border: 1.8px solid #000;
-
-        }
-
-       .navbar-toggle .toggle_icon+.toggle_icon{
-           margin-top: 6px !important;
-       }
-
-        .navbar_custom{
-            background-color: #fff;
-            border-color: transparent;
-            min-height: 89px;
-        }
-
-        .logo_align{
-            margin-left: -15px !important;
-            color: #000 !important;
-            padding: 30px 15px !important;
-        }
-
-        .search_icon{
-            position: absolute;
-            right:30px;
-            top:30px;
-        }
-    </style>
 </head>
 <body>
 
@@ -88,89 +21,309 @@
     <nav class="navbar navbar-default navbar_custom">
         <div class="container-fluid">
             <div class="row">
-            <div class="col-md-12">
-                <div class="navbar-header">
-                    <button class="navbar-toggle toggle_custom" type="button" data-toggle="collapse"
-                            data-target="#"><span
-                            class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar toggle_icon"></span>
-                        <span class="icon-bar toggle_icon"></span>
-                        <span class="icon-bar toggle_icon"></span>
-                    </button>
-                    <a class="navbar-brand logo_align font32 font_bold" href="#">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle toggle_custom" type="button" data-toggle="collapse"
+                                data-target="#"><span
+                                class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar toggle_icon"></span>
+                            <span class="icon-bar toggle_icon"></span>
+                            <span class="icon-bar toggle_icon"></span>
+                        </button>
+                        <a class="navbar-brand logo_align font32 font_bold" href="#">
                             Quintype
-                    </a>
-                    <img src="images/search-blue.png" alt="search_icon quintype" class="img-responsive search_icon">
+                        </a>
+                        <img src="images/search-blue.png" alt="search_icon quintype" class="img-responsive search_icon">
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </nav>
 </header>
+<!------------------------End of Header----------------------->
+<!-------------------------Start of Body Section------------------>
 
-<!--<div class = 'container' style="min-height: 800px;">-->
-    <!--<input type="button" value="click me" class="btn">-->
-    <!--<h1 class="appendData"></h1>-->
-<!--</div>-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 content_align edit_display">
+            <a href="#" class="science_img">
+                <img src="http://via.placeholder.com/1000x751" class="img-responsive"></a>
+        </div>
+        <div class="col-md-6 col-sm-6 content_align edit_display_content">
+            <div class="box-content bg-white box_decorate">
+                <p class="font18 font_bold tag1 color_black science_tag head_left_underline color_yellow">
+                    SCIENCE
+                </p>
+                <h1>>Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a virus’</h1>
+
+                <p class="hidden-xs">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                    an unknown printer took a galley of type and scrambled.</p>
+                <div class="m-t-30 author_section">
+                    <img src="http://via.placeholder.com/54x54" class="img-responsive float-left">
+                    <p class="float-left p-l-10 color_81">Alex Parkinson <br> <span>Posted 15 min ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-t-50">
+        <div class="col-md-4 col-sm-6 m-t-50">
+            <img src="http://via.placeholder.com/1000x562" class="img-responsive">
+            <div class="bg-white business_section box_decorate">
+                <p class="font_bold color_black font14 default_ls head_left_underline color_orange">BUSINESS</p>
+                <h3>Jenny Lawson Is Publishing a New Book and It’s Sort of a Coloring Book</h3>
+                <p class="font14 font-lora color_5c">Lorem Ipsum has been the industry's standard dummy text ever since
+                    the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                <p class="font16 m-t-22 color_81">Jonnathan Doe</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 m-t-50">
+            <p class="font_bold color_black font14 default_ls head_left_underline color_blue">TRAVEL</p>
+            <h3 class="news_headline font_bold">Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G
+                Service</h3>
+            <p class="font14 color_81">Alex Parkinson</p>
+            <hr>
+            <p class="font_bold color_black font14 default_ls head_left_underline color_pink">HEALTH & FITNESS</p>
+            <h3 class="news_headline font_bold">Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To Near
+                2.5-Year Low</h3>
+            <p class="font14 color_81">Alice Doe</p>
+            <hr>
+            <p class="font_bold color_black font14 default_ls head_left_underline color_yellow">SCIENCE</p>
+            <h3 class="news_headline font_bold">Sundar Pichai Launches ‘Digital Unlocked’ Programme </h3>
+            <p class="font14 color_81">Jonnathan Doe</p>
+
+        </div>
+        <div class="col-md-4 col-sm-6 m-t-50">
+            <img src="images/banner.png" alt="Quintype Banner" class="img-responsive hidden-xs hidden-sm">
+            <div class="m-t-30 bg-blue newsletter_section hidden-sm">
+                <img src="images/mail_icon.png" alt="Quintype mail icon" class="img-responsive center-block">
+                <p class="text-center m-t-10 font20 color_white">Subscribe to Newsletter</p>
+                <form action="#" method="post">
+                    <input type="text" class="form-control text_box" placeholder="Your email">
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary default_btn text-center">Subscribe</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="m-t-40 must_read_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+
+                <h1 class="font_bold color_white">Must Reads</h1>
+                <h1 class="m-t-40 color_white">Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a
+                    virus’</h1>
+                <div class="text-center m-t-60">
+                    <a href="#" class="btn btn-primary default_btn font_bold ">READ STORY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 m-t-40">
+            <h1 class="font_bold color_black head_left_underline color_large_blue">Politics</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 m-t-10">
+            <img src="http://via.placeholder.com/1000x1648" class="img-responsive center-block">
+            <div class="politics_section">
+                <h1 class="font_bold color_black">Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain
+                    of a virus’</h1>
+                <p>Jonnathan Doe</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 m-t-10">
+            <img src="http://via.placeholder.com/1000x527" class="img-responsive center-block">
+            <div class="politics_box">
+                <h3>Jenny Lawson Is Publishing a New Book and It’s Sort of a Coloring Book</h3>
+                <p class="font16 color_81">Jonnathan Doe</p>
+            </div>
+            <div class="politics_box m-t-22">
+                <h3>Airtel Offers 3 GB Free Data A Month To Customers Who Switch To Its 4G Service</h3>
+                <p class="font16 color_81">Alice Doe</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 m-t-10">
+            <div class="row">
+                <div class="col-sm-6 col-md-12">
+                    <h3 class="news_headline font_bold">Airtel Offers 3 GB Free Data A Month To Customers Who Switch To
+                        Its 4G Service</h3>
+                    <p class="font14 color_81">Alex Parkinson</p>
+                    <hr>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <h3 class="news_headline font_bold">Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To
+                        Near 2.5-Year Low</h3>
+                    <p class="font14 color_81">Alice Doe</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-12">
+                    <h3 class="news_headline font_bold">Sundar Pichai Launches ‘Digital Unlocked’ Programme </h3>
+                    <p class="font14 color_81">Jonnathan Doe</p>
+                    <hr class="hidden-sm">
+                </div>
+                <div class="col-sm-6 col-md-12">
+
+                    <h3 class="news_headline font_bold">Warning Letter For Ankleshwar Plant Sends Wockhardt Shares To
+                        Near 2.5-Year Low</h3>
+                    <p class="font14 color_81">Alice Doe</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 m-t-40">
+            <h1 class="font_bold color_black head_left_underline color_large_pink">Food & Health</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 m-t-30">
+            <div class="row">
+                <div class="col-xs-6 food_section edit_display1">
+                    <img src="http://via.placeholder.com/800x582" class="img-responsive center-block">
+                </div>
+                <div class="col-xs-6 food_section edit_display_content1">
+                    <div class="bg-white">
+                        <h3 class="font22">This Is What 300 Calories Look Like, Think Twice Before You Eat! </h3>
+                        <p class="m-t-40 color_81 font16">Jonnathan Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-30">
+                <div class="col-xs-6 food_section edit_display1">
+                    <img src="http://via.placeholder.com/800x662" class="img-responsive center-block">
+                </div>
+                <div class="col-xs-6 food_section edit_display_content1">
+                    <div class="bg-white">
+                        <h3 class="font22">Airtel Offers 3 food Data A Month To Customers Who Switch To Its food
+                            service</h3>
+                        <p class="m-t-40 color_81 font16">Matt Wilson</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-30">
+                <div class="col-xs-6 food_section edit_display1">
+                    <img src="http://via.placeholder.com/800x582" class="img-responsive center-block">
+                </div>
+                <div class="col-xs-6 food_section edit_display_content1">
+                    <div class="bg-white">
+                        <h3 class="font22">This Is What 300 Calories Look Like, Think Twice Before You Eat! </h3>
+                        <p class="m-t-40 color_81 font16">Jonnathan Doe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 m-t-30">
+            <img src="http://via.placeholder.com/1000x647" class="img-responsive center-block">
+            <div class="bg-white food_section2">
+                <h2>Jenny Lawson Is preparing a new dish and It’s Sort of a Coloring Dish</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled.</p>
+                <p class="font16 m-t-40">Thomas Edison</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="bg-white m-t-50">
+    <div class="container add_element">
+        <div class="row">
+            <div class="col-md-12 m-t-50">
+                <h1 class="font_bold color_black head_left_underline color_large_pink">Recent Stories</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row m-t-20">
+                    <div class="col-xs-4">
+                        <img src="http://via.placeholder.com/370x271" class="img-responsive center-block">
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="font_bold font14 color_black default_ls head_left_underline color_pink story_font">
+                            HEALTH & FITNESS</p>
+                        <h2 class="story_heading">This Week in Fiction: Jonathan Lethem on the Poignance of
+                            Backgammon</h2>
+                        <p class="color_81 m-b-0 m-t-30 story_author">Alex Parkinson</p>
+                        <span class="font14 story_update">Posted 15 min ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row m-t-40">
+                    <div class="col-xs-4">
+                        <img src="http://via.placeholder.com/370x271" class="img-responsive center-block">
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="font_bold font14 color_black default_ls head_left_underline color_pink story_font">
+                            HEALTH & FITNESS</p>
+                        <h2 class="story_heading">Jenny Lawson Is Publishing a New Book and It’s Sort of a Coloring
+                            Book</h2>
+                        <p class="color_81 m-b-0 m-t-30 story_author">Alex Parkinson</p>
+                        <span class="font14 story_update">Posted 15 min ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row m-t-40">
+                    <div class="col-xs-4">
+                        <img src="http://via.placeholder.com/370x271" class="img-responsive center-block">
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="font_bold font14 color_black default_ls head_left_underline color_pink story_font">
+                            HEALTH & FITNESS</p>
+                        <h2 class="story_heading">This Week in Fiction: Jonathan Lethem on the Poignance of
+                            Backgammon</h2>
+                        <p class="color_81 m-b-0 m-t-30 story_author">Alex Parkinson</p>
+                        <span class="font14 story_update">Posted 15 min ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--------------------------End of Body Section------------------------->
+    <!------------------------Start of footer section--------------------------->
+    <footer class="m-t-50 bg-black test">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 hidden-xs">
+                    <img src="images/shape.png" alt="Quintype logo" class="img-responsive">
+                </div>
+                <div class="col-md-8 col-xs-12 text_center">
+                    <div class="text-right color_white">
+                        <a href="#" class="font18">About us</a>
+                        <span>|</span>
+                        <a href="#" class="font18">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="#" class="font18">Terms & Conditions</a>
+                        <p class="m-t-30 color_white m-b-0">Copyright 2016 &copy;</p>
+                        <p class="color_white">Powered By Quintype</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<!------------------------End of Footer Sections--------------------------->
+<!--------------------------Scripts----------------------------------->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="vendors/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
-<script>
-    var processing;
-    var update;
-    var i = 0;
-
-    function nextItem() {
-        i = i + 1;
-        i = i % update.length;
-      return update[i].headline;
-
-
-    }
-
-$('.btn').on('click',function () {
-    console.log(nextItem());
-
-});
-    $.ajax({
-        type: 'GET',
-        url: 'https://rio.quintype.io/api/v1/stories',
-        "async": true,
-        "crossDomain": true,
-        data: {
-            format: 'json'
-        },
-        error: function(data) {
-            console.log(data);
-        },
-        dataType: 'json',
-        success: function(data) {
-console.log(data);
-            update = data.stories;
-            console.log(update.length);
-
-
-        }
-
-    });
-
-    $(document).ready(function(){
-        $(document).scroll(function(e){
-
-            if (processing)
-                return false;
-
-            if ($(window).scrollTop() >= $(document).height() - $(window).height() - 700){
-                processing = true;
-
-                processing = false;
-
-        }
-
-    });
-
-    });
-
-</script>
+<script src="js/custom.js"></script>
 </body>
 </html>

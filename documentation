@@ -1,0 +1,37 @@
+Project Name: Infinte Scrolling
+Technologies used: HTML5, CSS3, Javascript, jQuery, API, Bootstrap & GIT
+Description:
+This project is coded in such a way that when a user reaches to the bottom of the page, stories are added dyanmically which are fetched from the server. This gives a never ending feeling to the user.
+
+I will just walk through my files and its need:
+
+1) "index.html" contains the html code.
+2) "images" folder contains all images used.
+3) "css" folder contains the css files.
+4) "js" folder contains the js files.
+
+1) index.html:
+
+In this file there are 3 sections:
+1) Header
+2) Body
+3) Footer
+
+CSS links are included in the head tag.
+JS links are included right before closing the body tag.
+
+
+2) images:
+
+In this folder you can get all the images used during entire project/
+
+3) css:
+
+In this folder it contains custom.css which is a stylesheet for the complete project.
+
+4) js:
+
+In this folder it contains custom.js which contains all functions/events used. I used jQuery library. So it contains jquery code also.
+
+Note: This is my first release. There is still many more to come like animation effect, masonry grid etc which really gives a smooth experience. So stay tuned!
+Thank you!
